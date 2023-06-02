@@ -1,0 +1,161 @@
+{
+  "stepSceneName": [
+    "Step1",
+    "Step2",
+    "Step3",
+    "Step4"
+  ],
+  "lab_steps": [
+    {
+      "step_name": "Step1",
+      "children": [
+        { "sub_name": "1.Pop Window" },
+        { "sub_name": "2.Hint" }
+      ]
+    },
+    {
+      "step_name": "Step2",
+      "children": [
+        { "sub_name": "Single Choice" },
+        { "sub_name": "Mult Choice" }
+
+      ]
+    },
+    {
+      "step_name": "Step3",
+      "children": [
+        { "sub_name": "Step3 substep1" },
+        { "sub_name": "Step3 substep2" }
+
+      ]
+    },
+    {
+      "step_name": "Step4",
+      "children": [ { "sub_name": "Step4 substep1" } ]
+    }
+  ],
+  "lab_info": [
+    {
+      "name": "实验名称",
+      "content": "家兔失血性休克"
+    },
+    {
+      "name": "实验目的",
+      "content": "1.制作家兔失血性休克的动物模型。<br>2.观察失血性休克时家兔的各项生理指标及微循环变化。</br>3.观察及时输血输液的抢救性过程中家兔各项生理指标及微循环变化。<br>4.探讨失血性休克的发病机制。"
+    },
+    {
+      "name": "实验原理",
+      "content": "采取动脉放血的方法使循环血量不足，造成静脉回心血量减少，血压下降，通过压力感受器反射引起交感神经兴奋，外周血管收缩，组织灌流量急剧减少，导致低容量性休克。"
+    },
+    {
+      "name": "实验方法",
+      "content": "---。"
+    },
+    {
+      "name": "注意事项",
+      "content": "1．本实验手术项目较多,创伤面较大,应尽量减少手术中出血。如手术中出现小出血点,用纱布按压止血即可;出现中等出血,则可用止血钳夹住后结扎即可;出现大出血(如动脉破裂),应用手指夹住出血部位，找到出血点后进行结扎,不可用止血钳钳夹血管。<br>2．放血前对管道进行再次肝素化,以免造成管道内凝血。<br>3．若出现动物挣扎,用1%普鲁卡因局部麻醉,避免造成创伤性休克。<br>4．各实验小组成员要合理分工, 各尽其责, 相互配合。"
+    }
+  ],
+  "lab_ppt": [
+    {
+      "img": "PPT/01",
+      "title": "实验名称"
+    },
+    {
+      "img": "PPT/02",
+      "title": "实验目的"
+    },
+    {
+      "img": "PPT/03",
+      "title": "实验原理"
+    },
+    {
+      "img": "PPT/04",
+      "title": "实验材料"
+    },
+    {
+      "img": "PPT/05",
+      "title": "实验步骤"
+    },
+    {
+      "img": "PPT/06",
+      "title": "实验项目"
+    },
+    {
+      "img": "PPT/07",
+      "title": "注意事项"
+    },
+    {
+      "img": "PPT/08",
+      "title": "思考"
+    }
+  ],
+  "lab_qicai": [
+    {
+      "icon": "Qicai/stronge",
+      "label": "QiCai1"
+    },
+    {
+      "icon": "Qicai/stronge",
+      "label": "QiCai2"
+    },
+    {
+      "icon": "Qicai/stronge",
+      "label": "QiCai3"
+    },
+    {
+      "icon": "Qicai/stronge",
+      "label": "QiCai4"
+    },
+    {
+      "icon": "Qicai/stronge",
+      "label": "QiCai5"
+    },
+    {
+      "icon": "Qicai/stronge",
+      "label": "QiCai6"
+    },
+    {
+      "icon": "Qicai/stronge",
+      "label": "QiCai7"
+    },
+    {
+      "icon": "Qicai/stronge",
+      "label": "QiCai8"
+    }
+  ],
+  "lab_yaoji": [
+    {
+      "icon": "Yaoji/img_benhailaming",
+      "label": "YaoJi1"
+    },
+    {
+      "icon": "Yaoji/img_benhailaming",
+      "label": "YaoJi2"
+    },
+    {
+      "icon": "Yaoji/img_benhailaming",
+      "label": "YaoJi3"
+    },
+    {
+      "icon": "Yaoji/img_benhailaming",
+      "label": "YaoJi4"
+    },
+    {
+      "icon": "Yaoji/img_benhailaming",
+      "label": "YaoJi5"
+    },
+    {
+      "icon": "Yaoji/img_benhailaming",
+      "label": "YaoJi6"
+    },
+    {
+      "icon": "Yaoji/img_benhailaming",
+      "label": "YaoJi7"
+    },
+    {
+      "icon": "Yaoji/img_benhailaming",
+      "label": "YaoJi8"
+    }
+  ]
+}
