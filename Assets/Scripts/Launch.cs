@@ -4,11 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 /// <summary>
 /// 启动场景脚本
-/// 
 /// </summary>
 public class Launch : MonoBehaviour
 {
+
+    /// <summary>
+    /// UI界面，主要是一些弹窗生成位置
+    /// </summary>
     public GameObject m_MainCanvas;
+
+    
 
     //UIManager
     private void Awake()

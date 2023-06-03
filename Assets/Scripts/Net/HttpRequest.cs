@@ -57,7 +57,7 @@ public class HttpRequest : Singleton<HttpRequest>
     {
         UnityWebRequest m_Http = UnityWebRequest.Get(url);
         yield return m_Http.SendWebRequest();
-        if (m_Http.isNetworkError || m_Http.isHttpError)
+        if (m_Http.result==UnityWebRequest.Result.ConnectionError || m_Http.result == UnityWebRequest.Result.ProtocolError)
         {
             Debug.LogWarning(m_Http.error);
         }
@@ -73,7 +73,7 @@ public class HttpRequest : Singleton<HttpRequest>
         m_Http.SetRequestHeader("Content-Type", "application/json");
         m_Http.SetRequestHeader("Authorization", "Bearer 2420CE8E46F3ADD898872D2D16E3B489338649A7B3C962F1BB824241562B018E");
         yield return m_Http.SendWebRequest();
-        if (m_Http.isNetworkError || m_Http.isHttpError)
+        if (m_Http.result == UnityWebRequest.Result.ConnectionError || m_Http.result == UnityWebRequest.Result.ProtocolError)
         {
             Debug.LogError(m_Http.error);
         }
@@ -141,7 +141,7 @@ public class HttpRequest : Singleton<HttpRequest>
         //m_Http.downloadHandler = new DownloadHandlerBuffer();
         //m_Http.SetRequestHeader("Content-Type", "application/json");
         yield return m_Http.SendWebRequest();
-        if (m_Http.isNetworkError || m_Http.isHttpError)
+        if (m_Http.result == UnityWebRequest.Result.ConnectionError || m_Http.result == UnityWebRequest.Result.ProtocolError)
         {
             print(m_Http.error);
 
