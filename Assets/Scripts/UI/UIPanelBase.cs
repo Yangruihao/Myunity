@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class UIPanelBase : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
@@ -55,5 +56,37 @@ public class UIPanelBase : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     public virtual void OnResume()
     {
         canvasGroup.blocksRaycasts = true;
+    }
+    /// <summary>
+    /// 展开弹窗 
+    /// </summary>
+    /// <param name="timeNum">时间</param>
+    public virtual void OnDoShowGme(GameObject gme, float timeNum = 0.5f)
+    {
+
+        gme.transform.localScale = Vector3.zero;
+        gme.SetActive(true);
+        gme.transform.DOScale(Vector3.one, timeNum);
+    }
+
+    public virtual void OnDoShowGme(float timeNum = 0.5f)
+    {
+
+        gameObject.transform.localScale = Vector3.zero;
+        gameObject.SetActive(true);
+        gameObject.transform.DOScale(Vector3.one, timeNum);
+    }
+
+    public virtual void OnDoHideGme()
+    {
+        //gameObject.transform.localScale = Vector3.zero;
+        //gameObject.SetActive(true);
+        gameObject.transform.DOScale(Vector3.zero, 0.5f);
+    }
+    public virtual void OnDoHideGme(GameObject gme, float timeNum = 0.5f)
+    {
+        gme.transform.localScale = Vector3.one;
+        gme.transform.DOScale(Vector3.zero, timeNum);
+        //gme.SetActive(false);
     }
 }
